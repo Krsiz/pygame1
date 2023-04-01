@@ -20,21 +20,34 @@ while run:
         if e.type == KEYDOWN:
             if e.key == K_w:
                 print('up')
+                y = y - 10
+                window.blit(img1, (x,y))
+                display.update()
+
         if e.type == KEYDOWN:
             if e.key == K_s:
                 print('down')
+                y = y + 10
+                window.blit(img1, (x,y))
+                display.update()
+
         if e.type == KEYDOWN:
             if e.key == K_a:
                 print('left') 
+                x = x - 10
+                window.blit(img1, (x,y))
+                display.update()
+
         if e.type == KEYDOWN:
             if e.key == K_d:
-                print('right')          
+                print('right') 
+                x = x + 10
+                window.blit(img1, (x,y))
+                display.update()
+
+
         if e.type == QUIT:
             quit()
             run = False
-
-        
-            
-
 
 time.delay(5000)
