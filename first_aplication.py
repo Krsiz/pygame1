@@ -1,4 +1,5 @@
 from pygame import *
+# westrtfhyjguhkijkl,;
 window = display.set_mode((700, 500))
 display.set_caption("First project")
 #character coordinates
